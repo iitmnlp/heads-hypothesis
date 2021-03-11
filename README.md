@@ -1,3 +1,4 @@
+# The Heads Hypothesis
 ## Introduction
 A novel way of labelling the attention heads of BERT as described in detail in the following paper: https://arxiv.org/abs/2101.09115. There are 4 high-level functional roles: (a) Local, (b) Syntactic, (c) Block and (d) Delimiter.
 
@@ -6,6 +7,12 @@ A novel way of labelling the attention heads of BERT as described in detail in t
 We test this approach for 4 GLUE tasks, namely: <em>QNLI, QQP, MRPC and SST-2</em>. The end-to-end process consists of the following steps:-
 1. Compute sieve bias score from the attention weights.
 2. Apply Hypothesis Testing on top of the scores to assign functional roles to the heads. 
+
+## Requirements
+* Python 3.5+
+* Tensorflow 1.11 or higher
+* Numpy, Pickle, Scipy, Pandas, 
+* Visualization libraries: Matplotlib, Seaborn and Plotly.
 
 ## Setup (from scratch)
 1. After cloning this repo, download the attention weights from [here](https://drive.google.com/drive/folders/1tI3acAz4Qnlc9KBt9V6WEarMB5WUvw24?usp=sharing) and make a directory in the current folder named `pkl_dir` and keep all the attention weights files inside it.
