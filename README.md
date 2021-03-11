@@ -8,12 +8,12 @@ We test this approach for 4 GLUE tasks, namely: <em>QNLI, QQP, MRPC and SST-2</e
 2. Apply Hypothesis Testing on top of the scores to assign functional roles to the heads. 
 
 ## Setup (from scratch)
-1. After cloning this repo, download the attention weights from [here] (https://drive.google.com/drive/folders/1tI3acAz4Qnlc9KBt9V6WEarMB5WUvw24?usp=sharing) and make a directory in the current folder named `pkl_dir` and keep all the attention weights files inside it.
+1. After cloning this repo, download the attention weights from [here](https://drive.google.com/drive/folders/1tI3acAz4Qnlc9KBt9V6WEarMB5WUvw24?usp=sharing) and make a directory in the current folder named `pkl_dir` and keep all the attention weights files inside it.
 2. Run the respective ipynb files to compute the sieve scores for various functional roles.
 3. A new folder named `sieve_scores` is created and the scores (for each input sequence and each functional role) are generated and saved in this folder.
 
 ## Setup (Quickstart)
-1. For quick startup, we provide sample sieve scores (generated for 20 sentences taken from the test sets) [here] (https://drive.google.com/drive/folders/1i4G_qg9nIwsh-NVmNyrtXlRBIiNeYrws?usp=sharing).
+1. For quick startup, we provide sample sieve scores (generated for 20 sentences taken from the test sets) [here](https://drive.google.com/drive/folders/1i4G_qg9nIwsh-NVmNyrtXlRBIiNeYrws?usp=sharing).
 2. Download the scores and keep them inside a directory named `sieve_scores` in the current folder where this repository is cloned.
 3. Run label_heads.ipynb that generates `<task_name>_gems.pkl` that can be fed into the plotting code to visualize the role assignments to heads. label_heads.ipynb also contains a quick visualization inline.
 
