@@ -1,6 +1,6 @@
 # The Heads Hypothesis
 ## Introduction
-A novel way of labelling the attention heads of BERT as described in detail in the following paper: https://arxiv.org/abs/2101.09115. There are 4 high-level functional roles: (a) Local, (b) Syntactic, (c) Block and (d) Delimiter.
+A novel way of labelling the attention heads of BERT as described in detail in the following paper: https://arxiv.org/abs/2101.09115 accepted at AAAI'21. There are 4 high-level functional roles: (a) Local, (b) Syntactic, (c) Block and (d) Delimiter.
 
 
 
@@ -32,3 +32,14 @@ We derive several new observations and reinforce few other observations already 
 * As part of the task-specific fine-tuning, the later layers change the most with the high attention to the SEP token getting distributed to the other tokens of the sentence.
 * We scatter the p-values we get in our analysis, since they denote the confidence of our role assignment. Most (around 98%) values are near 0 or 1 indicating that the heads were highly confident when evaluating the null hypothesis.
 <img src="images/scatter1.png" width="40%">
+
+## Citation
+```
+@article{pande2021heads,
+  title={The heads hypothesis: A unifying statistical approach towards understanding multi-headed attention in BERT},
+  author={Pande, Madhura and Budhraja, Aakriti and Nema, Preksha and Kumar, Pratyush and Khapra, Mitesh M},
+  journal={arXiv preprint arXiv:2101.09115},
+  year={2021}
+}
+```
+
